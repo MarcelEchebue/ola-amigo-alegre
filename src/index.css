@@ -2,41 +2,67 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Architect Portfolio Design System */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Core Colors - Sophisticated neutral palette */
+    --background: 0 0% 99%;
+    --foreground: 210 15% 13%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 210 15% 13%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 210 15% 13%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Primary - Deep charcoal for elegance */
+    --primary: 210 15% 13%;
+    --primary-foreground: 0 0% 98%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Secondary - Warm copper accent */
+    --secondary: 22 45% 92%;
+    --secondary-foreground: 210 15% 13%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Muted - Soft grays for subtle elements */
+    --muted: 210 20% 96%;
+    --muted-foreground: 210 10% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Accent - Warm copper for highlights */
+    --accent: 22 65% 65%;
+    --accent-foreground: 0 0% 98%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 75% 60%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 210 20% 90%;
+    --input: 210 20% 90%;
+    --ring: 22 65% 65%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
+
+    /* Custom Design Tokens */
+    --copper: 22 65% 65%;
+    --copper-light: 22 45% 85%;
+    --copper-dark: 22 75% 45%;
+    
+    --stone: 210 15% 13%;
+    --stone-light: 210 10% 25%;
+    --stone-muted: 210 8% 60%;
+
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(210 15% 13% / 0.9), hsl(210 15% 13% / 0.7));
+    --gradient-copper: linear-gradient(135deg, hsl(var(--copper)), hsl(22 55% 75%));
+    --gradient-subtle: linear-gradient(180deg, hsl(0 0% 99%), hsl(210 20% 98%));
+
+    /* Shadows */
+    --shadow-elegant: 0 20px 40px -10px hsl(210 15% 13% / 0.15);
+    --shadow-copper: 0 10px 30px -5px hsl(var(--copper) / 0.2);
+    --shadow-card: 0 4px 20px -2px hsl(210 15% 13% / 0.08);
+
+    /* Animations */
+    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-fast: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 
     --sidebar-background: 0 0% 98%;
 
