@@ -100,8 +100,17 @@ export const ProjectsSection = () => {
                 onClick={() => setSelectedCategory(category)}
               >
                 <CardContent className="p-8 text-center">
-                  <div className="w-20 h-20 bg-gradient-copper rounded-lg flex items-center justify-center mx-auto mb-6 group-hover:shadow-copper transition-all duration-300">
-                    <div className="w-10 h-10 bg-background rounded-md"></div>
+                  <div className="w-20 h-20 rounded-lg overflow-hidden mx-auto mb-6 group-hover:shadow-copper transition-all duration-300">
+                    <img 
+                      src={`https://images.unsplash.com/photo-${category === 'administrativo' ? '1460574283810-2aab119d8511' : 
+                              category === 'cultural' ? '1466442929976-97f336a657be' :
+                              category === 'educativo' ? '1487958449943-2429e8be8625' :
+                              category === 'industrial' ? '1493397212122-2b85dda8106b' :
+                              category === 'residencial' ? '1551038247-3d9af20df552' :
+                              '1524230572899-a752b3835840'}?w=80&h=80&fit=crop`}
+                      alt={categoryNames[category]} 
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                   <h3 className="text-2xl font-display font-semibold text-primary mb-3 group-hover:text-copper transition-colors duration-300">
                     {categoryNames[category]}
