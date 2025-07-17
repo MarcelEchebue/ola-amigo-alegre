@@ -10,10 +10,41 @@ export const Footer = () => {
             <h3 className="text-2xl font-display font-bold mb-4">
               Web Developer
             </h3>
-            <p className="text-primary-foreground/80 leading-relaxed">
+            <p className="text-primary-foreground/80 leading-relaxed mb-6">
               Transformando ideas en experiencias digitales únicas a través de 
               desarrollo web innovador y diseño responsivo.
             </p>
+            
+            {/* Social Links */}
+            <div className="flex flex-col space-y-3">
+              <a
+                href="https://github.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-3 text-primary-foreground/80 hover:text-copper transition-colors duration-300"
+              >
+                <Github className="w-5 h-5" />
+                <span>GitHub</span>
+              </a>
+              <a
+                href="https://instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-3 text-primary-foreground/80 hover:text-copper transition-colors duration-300"
+              >
+                <Instagram className="w-5 h-5" />
+                <span>Instagram</span>
+              </a>
+              <a
+                href="https://linkedin.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-3 text-primary-foreground/80 hover:text-copper transition-colors duration-300"
+              >
+                <Linkedin className="w-5 h-5" />
+                <span>LinkedIn</span>
+              </a>
+            </div>
           </div>
 
           {/* Quick Links */}
@@ -55,37 +86,14 @@ export const Footer = () => {
             </ul>
           </div>
 
-          {/* Social Links */}
+          {/* Contact Info */}
           <div>
-            <h4 className="text-lg font-semibold mb-4">Sígueme</h4>
-            <div className="flex flex-col space-y-4">
-              <a
-                href="https://github.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-3 text-primary-foreground/80 hover:text-copper transition-colors duration-300"
-              >
-                <Github className="w-5 h-5" />
-                <span>GitHub</span>
-              </a>
-              <a
-                href="https://instagram.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-3 text-primary-foreground/80 hover:text-copper transition-colors duration-300"
-              >
-                <Instagram className="w-5 h-5" />
-                <span>Instagram</span>
-              </a>
-              <a
-                href="https://linkedin.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-3 text-primary-foreground/80 hover:text-copper transition-colors duration-300"
-              >
-                <Linkedin className="w-5 h-5" />
-                <span>LinkedIn</span>
-              </a>
+            <h4 className="text-lg font-semibold mb-4">Contacto Directo</h4>
+            <div className="space-y-2 text-primary-foreground/80">
+              <p>info@webdeveloper.com</p>
+              <p>+52 55 1234 5678</p>
+              <p>Av. Desarrollo 123</p>
+              <p>Ciudad Digital, CP 12345</p>
             </div>
           </div>
         </div>
